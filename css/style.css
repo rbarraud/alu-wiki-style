@@ -3,6 +3,9 @@
 #pageheader {
     background: url(../img/headerbg.png) top left repeat-x;
     height: 109px;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 #header {
@@ -129,20 +132,26 @@
     background:#175487;
 }
 
+#header-buttons {
+    position: absolute;
+    top: 109px;
+}
+
 .buttonbar {
-    margin-left: -12px;
-    padding-left: 85px;
     height: 36px;
     background: #256aa3;
+    width: 100%;
 }
 
 .buttonbar ul {
     list-style: none; list-style-position: outside;
+    margin-left: 73px;
 }
 
 .buttonbar ul li {
     float: left;
     line-height: 36px;
+    height: 36px;
 }
 
 .buttonbar ul li a {
@@ -180,21 +189,27 @@
 
 #content {
     padding-top:15px;
-    padding-left:85px;
-    padding-right:85px;
     background: url(../img/contentbg.png) top left repeat-x transparent;
     font-size: 15px;
     line-height: 22px;
+    position: absolute;
+    top: 145px;
+    width: 100%;
 }
 
-#content h1 {
+#content-area {
+    padding-left:85px;
+    padding-right:85px;
+}
+
+#content-area h1 {
     padding: 30px 0 20px 0;
     font-size: 30px;
     font-weight: normal;
     color: #256aa3;
 }
 
-#content h2 {
+#content-area h2 {
     padding: 20px 0 10px 0;
     font-size: 26px;
     font-weight: normal;
@@ -202,29 +217,29 @@
     color: #256aa3;
 }
 
-#content li {
+#content-area li {
     margin-left: 40px;
 }
 
-#content .code {
+#content-area .code {
     background: #F7FBFD;
 }
 
-#content p {
+#content-area p {
     padding-top: 15px;
 }
 
 .internal { text-decoration: none; color: #0645ad; }
-#content a.internal { text-decoration: none; color: #0645ad; }
-#content a { color: #0000ee; }
-#content a:visited { color:#1c0080; }
-#content a.new { color: #BA0000; text-decoration: none; }
-#content a.category { color:#6c6591; text-decoration: none; }
-#content a.hyperspec { color: #4040f2;}
-#content a.download { color: #00E; font-weight: bold; }
+#content-area a.internal { text-decoration: none; color: #0645ad; }
+#content-area a { color: #0000ee; }
+#content-area a:visited { color:#1c0080; }
+#content-area a.new { color: #BA0000; text-decoration: none; }
+#content-area a.category { color:#6c6591; text-decoration: none; }
+#content-area a.hyperspec { color: #4040f2;}
+#content-area a.download { color: #00E; font-weight: bold; }
 
-#content input[type=text], textarea { border:1px solid #a4a4a4; }
-#content textarea { width:100%; }
+#content-area input[type=text], textarea { border:1px solid #a4a4a4; }
+#content-area textarea { width:100%; }
 
 #article table {
     background: #F7FBFD;
@@ -241,11 +256,11 @@
 
 #categories {
     margin-top: 20px;
-    margin-bottom:-20px;
+    margin-bottom:-40px;
 }
 
 #footer {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 pre, pre *, code, .code, .code * { font-family: monospace; }
@@ -284,11 +299,7 @@ td.diff-addline { font-size: smaller;}
     float:left;
 }
 
-#registration dd {
-    margin-left:10em;
-}
-
-#changemail dd {
+.prefs dd {
     margin-left:10em;
 }
 

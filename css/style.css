@@ -314,7 +314,7 @@ td.diff-addline { font-size: smaller;}
     float:left;
 }
 
-.prefs dd {
+#content-area .prefs dd {
     margin-left:10em;
 }
 

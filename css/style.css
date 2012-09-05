@@ -84,6 +84,7 @@
     width:103px;
     line-height: 15px;
     margin-top:2px;
+    margin-left:-1px;
     border:0;
     padding:0;
 }
@@ -93,7 +94,6 @@
     width:103px;
     background:#256aa3;
     text-align:center;
-    margin-left:-1px;
     line-height:15px;
 }
 

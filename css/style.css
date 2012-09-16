@@ -280,6 +280,8 @@
 
 pre, pre *, code, .code, .code * { font-family: monospace; }
 
+tt { font-family: Courier; }
+
 #pagehistory {
     background:none;
     border:0;
